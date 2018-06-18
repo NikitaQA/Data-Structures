@@ -1,0 +1,4 @@
+// Take empty bucket first. Use no. of elements * a[i] to get bucket index (position) where can add array element. If any element is already
+    present in that bucket index then use insertion sort to compare with other elements in that bucket and then insert.
+    
+    
