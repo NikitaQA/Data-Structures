@@ -1,0 +1,19 @@
+// find minimun in an array and compare with front element and exchange it.
+
+public int[] selectionSort(int[] a){
+  int temp = 0;
+  int min;
+  int len = a.length;
+  for(int i=0; i<len-1; i++){
+    min = i;
+    for(int j=i+1; j<len; j++){
+      if(a[j]<a[min]){
+        min = j;
+      }
+    }
+    temp = a[i]; //front
+    a[i] = a[min];
+    a[min] = temp;
+  }
+  return a;
+}
