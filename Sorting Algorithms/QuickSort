@@ -1,0 +1,6 @@
+// divide and conquer. select pivot element randomly(mostly last), then compare each element with pivot take all elements less than pivot on left of pivot 
+   and greater on right of pivot. 
+   (take cur and i ptr. compare cur with pivot if greater then cur++ else swap cur with i and i++, cur++. when reach to pivot then swap 
+    with i now recursively apply this algo on each subarray by selecting pivot again.)
+   
+   refer: https://en.wikipedia.org/wiki/Quicksort
