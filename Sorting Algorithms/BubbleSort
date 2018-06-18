@@ -1,0 +1,17 @@
+// Compare adjecent elements in an array, if first one is greater than second one then swap.
+
+
+public int[] bubbleSort(int[] a){
+  int temp = 0;
+  int len = a.length;
+  for(int i=0; i<len; i++){
+    for(int j=1; j<(len-i); j++){
+      if(a[j-1] > a[j]){
+        temp = a[j-1];
+        a[j-1] = a[j];
+        a[j] = temp;
+      }
+    }    
+  }
+  return a;
+}
