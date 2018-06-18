@@ -1,0 +1,4 @@
+// Use divide and conquer. divide given array in equal halves again an again until get single unit. Then compare with adjecent element 
+   and swap if first is greater than second and then merge. Do this until get sorted array.
+   
+   refer: https://en.wikipedia.org/wiki/Merge_sort
