@@ -1,0 +1,36 @@
+class Node {
+  int data;
+  Node next = null;
+  
+  public Node(int data){
+     this.data = data;
+  }
+}
+
+class Stack {
+  Node head = null;
+  int size;
+  
+  public Stack() {
+    size = 0;
+  }
+  
+  public void push(int data){
+    Node temp = head;
+    head = new Node(data);
+    head.next = temp;
+    size++;
+  }
+  
+  public int pop(){
+    if(size == 0){
+      return -1;
+    }
+    else {
+      int data = head.data;
+      head = head.next;
+      size--;   
+    }
+    return data;
+  }
+}
