@@ -16,7 +16,7 @@ class BInsert{
     root = null;
   }
   
-  public void insertR(TNode root, int key){
+  public TNode insertR(TNode root, int key){
     if(root == null){
       root = new TNode(key);
     }
