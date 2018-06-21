@@ -1,0 +1,67 @@
+
+// binary tree traversal
+
+class TNode{
+  int key;
+  TNode left;
+  TNode right;
+  
+  public TNode(int key){
+    this.key=key;
+    left=right=null;
+  }
+}
+
+class Traversal{
+  TNode root;
+  
+  public Traversal(){
+    root = null;
+  }
+  
+  public void inorder(Node root){
+    if(root == null){
+      return;
+    }
+    inorder(root.left);
+    SOP(root.key);
+    inorder(root.right);
+  }
+  
+  public void preorder(Node root){
+    if(root == null){
+      return;
+    }
+    SOP(root.key);
+    inorder(root.left);
+    inorder(root.right);
+  }
+  
+  public void preorder(Node root){
+    if(root == null){
+      return;
+    }
+    inorder(root.left);
+    inorder(root.right);
+    SOP(root.key);
+  } 
+  
+ // Wrappers over above recursive functions
+ 
+    void inorder() { inorder(root); }
+    void preorder() { preorder(root); }
+    void postorder() { postorder(root); }
+ 
+  
+  public static void main(string[] args){
+    Traversal t = new Traversal();
+    t.root = new TNode(1);
+    t.root.left = new TNode(2);
+    t.root.right = new TNode(3);
+    t.root.left.left = new TNode(4);
+    t.root.left.right = new TNode(5);
+    t.inorder(); // 4 2 5 1 3
+    t.preorder(); // 1 2 4 5 3
+    t.postorder(); // 4 5 2 3 1
+  }
+}
