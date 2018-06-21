@@ -1,0 +1,45 @@
+class TNode{
+  int key;
+  TNode left;
+  TNode right;
+  
+  public TNode(int key){
+    this.key=key;
+    left=right=null;
+  }
+}
+
+class BInsert{
+  TNode root;
+  
+  public BInsert(){
+    root = null;
+  }
+  
+  public void insertR(TNode root, int key){
+    if(root == null){
+      root = new TNode(key);
+    }
+    else{
+      if(key < root.key){
+        root.left = insertR(root.left,key);
+      }
+      else if(key > root.key){
+        root.right = insertR(root.right,key);
+      }
+    }
+    return root;
+  }
+    
+  public void insert(int key){
+    root = insertR(root,key);
+  }
+  
+  public static void main(string[] args){
+      BInsert b = new BInsert();
+      b.insert(2);
+      b.insert(3);
+      b.insert(4);
+      b.insert(5);      
+  }
+}
