@@ -1,0 +1,23 @@
+package general;
+
+public class LinearSearch 
+{
+	public static int lSearch(int a[],int k)
+	{
+		for(int i=0;i<=a.length;i++)
+		{
+			if(a[i]==k)
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+	public static void main(String[] args) 
+	{
+		int[] arr={20,40,10,70,50};
+		int key=10;
+		System.out.println("Key found at index: "+ lSearch(arr,key));	
+	}
+
+}
