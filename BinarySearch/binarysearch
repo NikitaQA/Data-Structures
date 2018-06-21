@@ -1,0 +1,42 @@
+package general;
+
+import java.util.Arrays;
+
+public class BinarySearch 
+{
+	public static void bSearch(int a[],int first,int last,int k)
+	{
+		int mid = (first+last)/2;
+		while(first<=last)
+		{
+			if(a[mid]<k)
+			{
+				first=mid+1;
+			}
+			else if(a[mid]==k)
+			{
+				System.out.println("Element found at index: "+mid);
+				break;
+			}
+			else
+			{
+				last=mid-1;
+			}
+			mid = (first + last)/2;  
+		}
+		
+		if(first>last)
+		{
+			System.out.println("Element not found");
+		}
+	}
+	public static void main(String[] args) 
+	{
+		int arr[] = {50,30,20,10,40}; //sort it first.
+		Arrays.sort(arr);  // 10,20,30,40,50.
+		int key = 10;
+		int last=arr.length-1;
+		bSearch(arr,0,last,key);
+	}
+
+}
