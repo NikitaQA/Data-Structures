@@ -39,8 +39,8 @@ class Queue {
     if(isEmpty(this)){
       return 0;
     }
-    this.front = (this.front+1) % this.capacity;
     int data = a[this.front];
+    this.front = (this.front+1) % this.capacity;
     size--;
     return data;
   }
