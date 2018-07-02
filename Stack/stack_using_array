@@ -16,14 +16,14 @@ class Stack{
   }
   
   public boolean isFull(){
-    if(top >= size ){
+    if(top >= size-1 ){
       return true;
     }
     return false;
   }
   
   public boolean push(int data){
-    if(top >= size){
+    if(top >= size-1){
       SOP("Stack overflow");
       return false;
     }
