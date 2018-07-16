@@ -37,7 +37,7 @@ class Traversal{
     inorder(root.right);
   }
   
-  public void preorder(Node root){
+  public void postorder(Node root){
     if(root == null){
       return;
     }
