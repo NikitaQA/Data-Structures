@@ -4,7 +4,22 @@
     with i now recursively apply this algo on each subarray by selecting pivot again.)
    
    refer: https://en.wikipedia.org/wiki/Quicksort
+          https://www.geeksforgeeks.org/in-place-algorithm/
+          https://www.geeksforgeeks.org/why-quick-sort-preferred-for-arrays-and-merge-sort-for-linked-lists/
+          https://www.geeksforgeeks.org/quick-sort/
+          
+   Time Complexity: Best/avg - O(nlogn) - when middle element is pivot
+                    Worst - O(n^2) - last element pivot and array sorted in increasing or decreasing order
+                    
+   In-palce algorithm - In-place means that the algorithm does not use extra space for manipulating the input 
+   but, may require a small though nonconstant extra space for its operation. e.g bubble, insertion, selection, quick
+   quick because, QuickSort uses extra space for recursive function calls and not for manipulating input.
 
+   quick is good for sorting arrays bcz,
+   Quick Sort in its general form is an in-place sort (i.e. it doesn’t require any extra storage) 
+   whereas merge sort requires O(N) extra storage, N denoting the array size which may be quite expensive.
+   Allocating and de-allocating the extra space used for merge sort increases the running time of the algorithm
+   For arrays, merge sort loses due to the use of extra O(N) storage space.
 
 quickSort(arr[], low, high)
 {
