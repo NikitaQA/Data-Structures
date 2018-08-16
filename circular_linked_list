@@ -1,0 +1,15 @@
+public void insert (Node n){
+  if(head.next==head){
+    head.next = n;
+    n.next = head;
+    return;
+  }
+  Node prev = head.next;
+  Node cur = head.next.next;
+  while(cur !== head && cur.data <= n.data){
+    prev = cur;
+    cur = cur.next;
+  }
+  n.next = prev.next;
+  prev.next = n;
+}
