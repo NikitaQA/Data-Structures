@@ -33,16 +33,16 @@ class Traversal{
       return;
     }
     SOP(root.key);
-    inorder(root.left);
-    inorder(root.right);
+    preorder(root.left);
+    preorder(root.right);
   }
   
   public void postorder(Node root){
     if(root == null){
       return;
     }
-    inorder(root.left);
-    inorder(root.right);
+    postorder(root.left);
+    postorder(root.right);
     SOP(root.key);
   } 
   
