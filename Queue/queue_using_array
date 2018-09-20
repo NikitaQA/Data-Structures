@@ -1,5 +1,6 @@
 applications - one way road in a game app, ticket counter(while buy movie tickets online then first come first serve seat of choice), 
-cpu scheduling llike round robin(assign fixed time to all processes,not on priority bases, first finish then next process continues)
+cpu scheduling llike round robin(assign fixed time to all processes,not on priority bases, first finish then next process continues),
+air planes first come first land
 
 class Queue {
   int capacity, front, rear, size;
