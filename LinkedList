@@ -1,3 +1,12 @@
+linked list applications = 
+- All the running applications are kept in a circular linked list and the OS gives 
+a fixed time slot to all for running. The Operating System keeps on iterating over the linked list until all 
+the applications are completed.
+- can be ued for hash table, graphs, stack, queue, etc.
+- helps for dynamic memory allocation
+- fast insertion and deletion.
+
+
 // Create Node
 
 class Node{
