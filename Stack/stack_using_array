@@ -1,3 +1,5 @@
+stack application - reverse a string, undo, piles of plates, etc
+
 class Stack{
   
   static final int size = 10;
