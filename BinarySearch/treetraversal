@@ -1,5 +1,5 @@
 
-// binary tree traversal
+// binary tree traversal = dfs algo. - visit root node first then go down till hit the end node, follow same for other branches.
 
 class TNode{
   int key;
