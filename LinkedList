@@ -104,6 +104,7 @@ public static void main(String args[]){
   l.head = l.reverse(l.head);
   l.print();  // 7 6 5
   l.delete(1); // 7 5
+  l.head.next = l.head;
   l.detect_loop() // 0
 }
 }
