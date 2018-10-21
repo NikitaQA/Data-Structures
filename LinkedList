@@ -84,7 +84,7 @@ class LinkedList{
   public int detect_loop(){
     Node cur = head;
     Node temp = head;
-    while(cur, temp && temp.next){
+    while(cur != null, temp != null && temp.next != null){
       cur = cur.next;
       temp = temp.next.next;
       if(cur == temp){
@@ -101,7 +101,7 @@ public static void main(String args[]){
   l.insert(6);
   l.insert(7);
   l.print();  // 5 6 7
-  l.reverse();
+  l.head = l.reverse(l.head);
   l.print();  // 7 6 5
   l.delete(1); // 7 5
   l.detect_loop() // 0
